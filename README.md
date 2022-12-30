@@ -4,16 +4,12 @@ Use Xbox Game Pass Cloud Gaming (xcloud) directly from within Retropie.
 # Installation
 All installation and configuration steps will happen in a command prompt.
 
-## Install google chrome browser
-Google chrome works very flawlessly with xcloud. You might also set-up another browser, hower you need to adapt the launch script.
-* Downlaod the debian package
+## Install chromium browser
+Install the chromium
 ```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install chromium-browser
 ```
-* Install the debian package
-```
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-```
+
 
 ## Add a new system to emulationstation
 Copy the `es_systems.cfg` file to your retropie configs directory, s.t. an update will not overwrite your configuration.
@@ -62,7 +58,7 @@ sudo cp -r /etc/emulationstation/themes/carbon-2021 /opt/retropie/configs/all/em
 * Reboot your emulationstation or your system
 
 ## Controller hotkey
-* In order to close the chrome browser rendering your xcloud games, you'll need a keyboard and a mouse (press ESC and click the X of the window header).
+* In order to close the chromium browser rendering your xcloud games, you'll need a keyboard and a mouse (press ESC and click the X of the window header).
 * You can use my [Retropie PCSX2 Wrapper](https://github.com/blcky05/retropie-pcsx2-wrapper), which will allow you to use your gamepad to close xcloud
 * Set-up `Retropie PCSX2 Wrapper` and configure your controller as described in the other repo
 * Modify the file `gamepad_wrapper.json` to add the xcloud system
